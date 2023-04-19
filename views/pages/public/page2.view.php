@@ -5,6 +5,7 @@
 <?php
 foreach ($datas as $data) {
     echo $data["nom"] ." / ". $data["type"] ." / ". $data["pv"] ." / ". $data["atk"] ."<br>";
+    // afficherTableau($data);
 }
 ?>
 <br><br>

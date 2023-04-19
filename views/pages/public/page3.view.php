@@ -1,6 +1,7 @@
 <h1>Titre Page 3</h1>
 <h2>Page 3 Contiendra</h2>
 <p>Contenu Page 3</p>
+<p>Connection BDD directe</p>
 
 <?php
 //connection directe à la bdd
