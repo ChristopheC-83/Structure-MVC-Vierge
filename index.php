@@ -5,8 +5,8 @@ session_start();
 
 // pour toujours repartir de la base du site on ecrira au début de nos liens (image ou autre...) :
 // URL dans des balises php
-define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS'])?"https":"hppt")."://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']));
-
+define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https"  : "http") . "://" . $_SERVER['HTTP_HOST'] .
+    $_SERVER["PHP_SELF"]));
 
 
 require_once("./controllers/mainController.controller.php");

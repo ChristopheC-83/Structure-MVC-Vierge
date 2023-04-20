@@ -1,5 +1,6 @@
 <?php
 
+// fichier de connexion à bdd
 
 function setBDD(){
     try {

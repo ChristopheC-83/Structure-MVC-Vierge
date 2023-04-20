@@ -1,5 +1,7 @@
 <?php
 
+// fichier avec des fonctions utilitaires
+
 function genererPage($data)
 {
     extract($data);

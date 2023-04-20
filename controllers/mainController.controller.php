@@ -1,6 +1,10 @@
 <?php
-//Controller peut être fait en POO mais ce n'est pas une obligation
+//mainController peut être fait en POO mais ce n'est pas une obligation
 // ici, nous sommes en procédural
+
+
+// mainController répertorie les pages avec leurs infos respectives
+
 
 
 require_once("./controllers/functionController.controller.php");
@@ -18,6 +22,7 @@ function pageAccueil()
         "view" => "views/pages/public/accueil.view.php",
         // on met un template variable au cas où une page en necessiterait un différent
         "template" => "views/commons/template.php",
+        "css"=>"accueilContainer",
         "variable_de_demo" => "demo de variable",
 
     ];
@@ -39,10 +44,10 @@ function pageErreur($msg)
 function page1()
 {
     //exemple de message d'alerte
-    $_SESSION['alert']=[
-        "message"=> "exemple de message d'alerte pour page1",
-        "type"=> "alerteVerte",
-    ];
+    // $_SESSION['alert']=[
+    //     "message"=> "exemple de message d'alerte pour page1",
+    //     "type"=> "alerteVerte",
+    // ];
 
 
     //on récupère les datas de mainManager, function getDataX()
@@ -60,11 +65,7 @@ function page1()
 }
 function page2()
 {
-    //exemple de message d'alerte
-    $_SESSION['alert']=[
-        "message"=> "exemple de message d'alerte pour page2",
-        "type"=> "alerteVerte",
-    ];
+    
     
     //on récupère les datas de mainManager, function getDatas()
     $datas = getDatas();

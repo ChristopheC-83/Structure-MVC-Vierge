@@ -2,10 +2,10 @@
 // les modelsManager permettent la récupéretion, le traitement des données
 // ils gèrent aussi la partie logique du site.
 
-// fonction qui simule recup de datas.
 require_once("./models/pdo.model.php");
 
 
+// fonction qui simule recup de datas.
 //A effacer, ne sert que d'exemple
 function getDataX(){
     $data=[
