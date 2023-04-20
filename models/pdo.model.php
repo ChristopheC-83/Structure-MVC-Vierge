@@ -3,11 +3,8 @@
 
 function setBDD(){
     try {
-        //connection à notre BDD
-        $pdo = new PDO("mysql:host=localhost; dbname=test", "root", "");
-        //Gestion des erreurs
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-        
+        //connection à notre BDD, à modifier pour site en construction
+        $pdo = new PDO("mysql:host=localhost; dbname=test", "root", "", [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);        
     } catch(PDOException $e) {
         echo "Erreur : " . $e->getMessage();
     }

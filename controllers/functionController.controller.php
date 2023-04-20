@@ -9,7 +9,8 @@ function genererPage($data)
     require_once($template);
 }
 
-function afficherTableau($array){
+function afficherTableau($array)
+{
     echo "<pre>";
     print_r($array);
     echo "</pre>";

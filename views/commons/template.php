@@ -13,14 +13,25 @@
 
 <body>
 
-    <?php require_once("views/commons/header.php")?>
-    
-    
+    <?php require_once("views/commons/header.php") ?>
+
+    <?php if (!empty($_SESSION['alert'])) : ?>
+        <div class="alert
+            <?= $_SESSION['alert']['type'];
+            //pour changer le style en fonction de la nature du message (alert : style commun)
+            ?>">
+            <?= $_SESSION['alert']['message'];
+            //pour changer le contenu du message 
+            ?>
+        </div>
+    <?php
+        unset($_SESSION['alert']);
+    endif;?>
+
     <?= $page_content ?>
-    
-    
-    
-    <?php require_once("views/commons/footer.php")?>
+
+    <?php require_once("views/commons/footer.php") ?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>

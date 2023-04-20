@@ -4,7 +4,7 @@
 <p>Connection BDD directe</p>
 
 <?php
-//connection directe à la bdd
+//connection directe à la bdd, sans passer par mainController/mainManager/pdo...
 try{
  $database = new PDO('mysql:host=localhost; dbname=test', 'root', "", [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 } catch (Exception $e) {

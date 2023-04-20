@@ -6,6 +6,7 @@
 require_once("./models/pdo.model.php");
 
 
+//A effacer, ne sert que d'exemple
 function getDataX(){
     $data=[
         "data1"=>"Données de la data1",
@@ -16,6 +17,7 @@ function getDataX(){
 
 }
 
+//Commande SQL à adapter au site en construction, au moins le nom de la table
 function getDatas(){
     $req = getBDD()->prepare("SELECT * from bd_mvc");
     $req -> execute();
