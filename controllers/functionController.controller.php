@@ -17,3 +17,11 @@ function afficherTableau($array)
     print_r($array);
     echo "</pre>";
 }
+
+function ajouterMessageAlerte($message, $type)
+{
+    $_SESSION['alert'][] = [
+        "message" => $message,
+        "type" => $type
+    ];
+}

@@ -13,9 +13,14 @@ require_once("./models/mainManager.model.php");
 
 function pageAccueil()
 {
+    // Exemple de message d'alerte
+    // ajouterMessageAlerte("message test", "rouge");
+    // ajouterMessageAlerte("message test2", "orange");
+
     // avec extract de genererPage
     //la variable $variable_de_demo aura la valeur "demo de variable"
     // génial non !?!
+    
     $data_page = [
         "page_description" => "Description accueil",
         "page_title" => "titre accueil",
@@ -48,7 +53,6 @@ function page1()
     //     "message"=> "exemple de message d'alerte pour page1",
     //     "type"=> "alerteVerte",
     // ];
-
 
     //on récupère les datas de mainManager, function getDataX()
     $datas = getDataX();
